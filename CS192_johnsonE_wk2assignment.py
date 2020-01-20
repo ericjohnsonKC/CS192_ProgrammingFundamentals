@@ -46,4 +46,4 @@ while time_card['Name'] != '0':
     time_card = {'Name': 0, 'Hours_worked': 0, 'Pay_rate': 0}  # clear memory for security
     time_card['Name'] = input('Enter employee\'s name or 0 to quit: ')
 
-
+print('Exiting program...')
