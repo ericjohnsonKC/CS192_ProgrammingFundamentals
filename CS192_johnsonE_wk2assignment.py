@@ -20,11 +20,15 @@ def calc_pay(overtime_pay, hours_worked, pay_rate):
 
 #this function will display name, gross pay, and overtime pay as required
 def display_pay(name, overtime_pay, gross_pay):
+    print('\n')
     print('Employee Name: ' + name)
     if overtime_pay == 0:
+        print('\n')
         print('Gross Pay: ' + '{:.1f}'.format(gross_pay))
     else:
+        print('\n')
         print('Gross Pay: ' + '{:.1f}'.format(gross_pay))
+        print('\n')
         print('(overtime pay: ' + '{:.1f}'.format(overtime_pay) + ')')
     return
 
@@ -32,18 +36,23 @@ def display_pay(name, overtime_pay, gross_pay):
 time_card = {'Name': 0, 'Hours_worked': 0, 'Pay_rate': 0}
 #-----------------------------------------------------------------
 # Begin with the specified welcome message
-print('ABC Inc., Gross Pay Calculator!')
+print('\n' + 'ABC Inc., Gross Pay Calculator!')
 
 # Initial prompt with exit option
+print('\n')
 time_card['Name'] = input('Enter employee\'s name or 0 to quit: ')
 
 while time_card['Name'] != '0':
+    print('\n')
     time_card['Hours_worked'] = float(input('Enter hours worked: '))
+    print('\n')
     time_card['Pay_rate'] = float(input('Enter employee\'s pay rate: '))
     overtime_pay = calc_overtime_pay(time_card['Hours_worked'], time_card['Pay_rate'])
     gross_pay = calc_pay(overtime_pay, time_card['Hours_worked'], time_card['Pay_rate'])
     display_pay(time_card['Name'], overtime_pay, gross_pay)
     time_card = {'Name': 0, 'Hours_worked': 0, 'Pay_rate': 0}  # clear memory for security
+    print('\n')
     time_card['Name'] = input('Enter employee\'s name or 0 to quit: ')
 
+print('\n')
 print('Exiting program...')
