@@ -25,7 +25,7 @@ def display_pay(name, overtime_pay, gross_pay):
         print('Gross Pay: ' + '{:.1f}'.format(gross_pay))
     else:
         print('Gross Pay: ' + '{:.1f}'.format(gross_pay))
-        print('(overtime pay: ' + '{:.1f}'.format(overtime_pay))
+        print('(overtime pay: ' + '{:.1f}'.format(overtime_pay) + ')')
     return
 
 # Initialize a time card that will be used for each employee
