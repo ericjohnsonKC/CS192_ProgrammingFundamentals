@@ -26,9 +26,31 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NetNinja-python" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.CS192_johnsonE_wk1assingment">
+    <configuration name="CS192_johnsonE_wk1assingment" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CS192_ProgrammingFundamentals" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\ericj\AppData\Local\Programs\Python\Python38-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CS192_johnsonE_wk1assingment.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="helloWorld" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CS192_ProgrammingFundamentals" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -52,6 +74,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.CS192_johnsonE_wk1assingment" />
         <item itemvalue="Python.helloWorld" />
       </list>
     </recent_temporary>
@@ -82,13 +105,45 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="0" key="SettingsEditor" timestamp="1579018223024">
+    <state x="61" y="0" key="#CS192_johnsonE_wk1assingment" timestamp="1579129591180">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1579018223023" />
+    <state x="61" y="0" key="#CS192_johnsonE_wk1assingment/0.0.1366.728@0.0.1366.728" timestamp="1579129591180" />
+    <state x="61" y="0" key="#helloWorld" timestamp="1579129560515">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="61" y="0" key="#helloWorld/0.0.1366.728@0.0.1366.728" timestamp="1579129560515" />
+    <state x="121" y="120" key="FileChooserDialogImpl" timestamp="1579137814839">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="121" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1579137814839" />
+    <state width="661" height="181" key="GridCell.Tab.0.bottom" timestamp="1579129678783">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="661" height="181" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579129678783" />
+    <state width="661" height="181" key="GridCell.Tab.0.center" timestamp="1579129678783">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="661" height="181" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579129678783" />
+    <state width="661" height="181" key="GridCell.Tab.0.left" timestamp="1579129678775">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="661" height="181" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579129678775" />
+    <state width="661" height="181" key="GridCell.Tab.0.right" timestamp="1579129678783">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="661" height="181" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579129678783" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1579551997214">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1579551997214" />
     <state x="384" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1579017288449">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="384" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1579017288449" />
+    <state x="183" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1579556779665">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="183" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1579556779665" />
   </component>
 </project>
