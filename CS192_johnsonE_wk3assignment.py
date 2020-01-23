@@ -36,7 +36,7 @@ def displayStudentProfile(student):
     print('\n')
     print('Weight:', student['weight'], 'lbs.')
     print('\n')
-    print('BMI Index:, '{:.1f}'.format(student['BMI']))
+    print('BMI Index:', '{:.1f}'.format(student['BMI']))
     return
 
 # Begin with welcome message:
