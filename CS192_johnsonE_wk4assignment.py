@@ -22,7 +22,7 @@ def mainMenu():
 # initialize a roster of players:
 roster = []
 
-# Below are the function defs for each menu selection:
+# Below are the function definitions for each menu selection:
 
 def printCurrentRoster(roster):
     for player in roster:
