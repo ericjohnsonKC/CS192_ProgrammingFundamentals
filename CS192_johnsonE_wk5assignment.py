@@ -1,6 +1,6 @@
 # Define a class of Player to hold player info
 class Player:
-    def__init__(self, name, phone, jerseyNum):
+    def __init__(self, name, phone, jerseyNum):
         self.name = '',
         self.phone = '',
         self.jerseyNum = ''
@@ -17,7 +17,7 @@ def mainMenu():
                'Remove Member.',
                'Edit Member.']
     i = 1
-        for option in menuOptions:
+    for option in menuOptions:
         print('\n')
         print(i, end = '')
         print('.', option)
