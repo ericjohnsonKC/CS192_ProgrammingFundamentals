@@ -1,94 +1,82 @@
-# Define a class of Player to hold player info
-class Player:
-    def __init__(self, name, phone, jerseyNum):
-        self.name = '',
-        self.phone = '',
-        self.jerseyNum = ''
+# Create class of Player
+class Player():
+    def __init__(self, name, phone, jerseyNumber):
+        self.name = name,
+        self.phone = phone,
+        self.jerseyNumber = jerseyNumber
 
-    
-
-
-# This function displays the main menu:
-def mainMenu():
-    print('\n')
-    print('{:=^30}'.format('Main Menu'))
-    menuOptions = ['Display Team Roster.',
-               'Add Member.',
-               'Remove Member.',
-               'Edit Member.']
-    i = 1
-    for option in menuOptions:
-        print('\n')
-        print(i, end = '')
-        print('.', option)
-        i += 1           
-    print('\n')
-    print('9. Exit Program.')
-    print('\n')
-    selection = int(input('Selection> '))
-    return selection
-
-# initialize a roster of players:
+# Create a dict to hold all players on roster
 roster = {}
 
-# Below are the function defs for each menu selection:
-
-def printCurrentRoster(roster):
+# Functions for each menu option:
+def displayTeamRoster(roster):
+    print('test')
     for player in roster:
-        print('\n')
-        print(player.name)
-        print(player.phone)
-        print(player.jerseyNum)
+        print('\n', roster[player].name)
+        print('\n', roster[player].phone)
+        print('\n', roster[player].jerseyNumber)
+        return roster
+
+def addMember(roster):
+    print('\n')
+    name = input("Enter the new member's name: ")
+    print('\n')
+    phone = input("Enter the new member's phone number: ")
+    print('\n')
+    jerseyNumber = input("Enter the new member's jersey number: ")
+    player = Player(name, phone, jerseyNumber)
+    roster[name] = player
     return roster
 
-def addNewPlayer(roster):
+def removeMember(roster):
     print('\n')
-    newName = input('Enter the new member\'s name: ')
-    newPhone = input('Enter the new member\'s phone number: ')
-    newJerseyNum = input('Enter the new member\'s jersey number: ')
-    newPlayer = Player(newName, newPhone, newJerseyNum)
-    roster[newPlayer.name] = newPlayer
+    player = input('Enter member name to be removed: ')
+    del roster[player]
     return roster
 
-def removePlayer(roster):
+def editMember(roster):
     print('\n')
-    roster.remove(input('Enter member name to be removed: ' ))
-    return roster
-
-def editPlayer(roster):
+    oldName = input("Enter the name of the member you want to edit: ")
     print('\n')
-    oldName = input('Enter the name of the member you want to edit: ')
+    newName = input("Enter the new name of the member: ")
     print('\n')
-    newName = input('Enter the new name of the member: ')
-    newPlayer = Player(newName, players[oldName].phone, players[oldName].jerseyNum)
-    del players[oldName]
+    newPhone = input("Enter the new phone number of the member: ")
+    print('\n')
+    newJerseyNum = input("Enter the new jersey number of the member: ")
+    player = Player(newName, newPhone, newJerseyNum)
+    roster[newName] = player
+    del roster[oldName]
 
-    return roster
+# A function to display the main menu and retrieve user selection:
+def mainMenu():
+    print('\n{:=^30}'.format('Main Menu'))
+    print("\n1. Display Team Roster.")
+    print('\n2. Add Member.')
+    print('\n3. Remove Member.')
+    print('\n4. Edit Member.')
+    print('\n9. Exit Program.')
+    print('\n')
+    selection = input('Selection> ')
+    return selection
 
-# Welcome message to start main program:
-print('\n')
-print('Welcome to the Team Manager')
-
-# Main program loop:
+print('\nWelcome to the Team Manager')
 selection = mainMenu()
-while selection != 9 :
-    if selection == 1 :
-        printCurrentRoster(roster)
+while selection != '9':
+    if selection == '1':
+        print(roster)
+        displayTeamRoster(roster)
         selection = mainMenu()
-    elif selection == 2 :
-        addNewPlayer(roster)
+    if selection == '2':
+        roster = addMember(roster)
         selection = mainMenu()
-    elif selection == 3 :
-        removePlayer(roster)
+    if selection == '3':
+        roster = removeMember(roster)
         selection = mainMenu()
-    elif selection == 4 :
-        editPlayer(roster)
+    if selection == '4':
+        roster = editMember(roster)
         selection = mainMenu()
-        
-print('\n')
-print('Exiting Program...')
+    else:
+        selection = mainMenu()
 
+print('\nExiting Program...')
 
-
-
-    
