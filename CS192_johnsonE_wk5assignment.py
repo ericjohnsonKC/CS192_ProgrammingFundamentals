@@ -10,12 +10,11 @@ roster = {}
 
 # Functions for each menu option:
 def displayTeamRoster(roster):
-    print('test')
     for player in roster:
         print('\n', roster[player].name)
         print('\n', roster[player].phone)
         print('\n', roster[player].jerseyNumber)
-        return roster
+    return roster
 
 def addMember(roster):
     print('\n')
@@ -46,6 +45,7 @@ def editMember(roster):
     player = Player(newName, newPhone, newJerseyNum)
     roster[newName] = player
     del roster[oldName]
+    return roster
 
 # A function to display the main menu and retrieve user selection:
 def mainMenu():
@@ -63,20 +63,17 @@ print('\nWelcome to the Team Manager')
 selection = mainMenu()
 while selection != '9':
     if selection == '1':
-        print(roster)
         displayTeamRoster(roster)
-        selection = mainMenu()
+
     if selection == '2':
         roster = addMember(roster)
-        selection = mainMenu()
+
     if selection == '3':
         roster = removeMember(roster)
-        selection = mainMenu()
+
     if selection == '4':
         roster = editMember(roster)
-        selection = mainMenu()
-    else:
-        selection = mainMenu()
+    selection = mainMenu()
 
 print('\nExiting Program...')
 
