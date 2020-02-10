@@ -11,9 +11,9 @@ roster = {}
 # Functions for each menu option:
 def displayTeamRoster(roster):
     for player in roster:
-        print('\n', roster[player].name)
-        print('\n', roster[player].phone)
-        print('\n', roster[player].jerseyNumber)
+        print('\nName:',roster[player].name)
+        print('Phone:',roster[player].phone)
+        print('Jersey number:',roster[player].jerseyNumber)
     return roster
 
 def addMember(roster):
@@ -64,13 +64,10 @@ selection = mainMenu()
 while selection != '9':
     if selection == '1':
         displayTeamRoster(roster)
-
     if selection == '2':
         roster = addMember(roster)
-
     if selection == '3':
         roster = removeMember(roster)
-
     if selection == '4':
         roster = editMember(roster)
     selection = mainMenu()
