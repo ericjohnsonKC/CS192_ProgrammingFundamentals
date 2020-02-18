@@ -23,6 +23,8 @@ def saveData(roster):
     return roster
 
 def loadData(roster):
+    createFile = open('./members.txt', 'a+')
+    createFile.close()
     inFile = open('./members.txt', 'rt')
     while True:
         inLine = inFile.readline()
@@ -89,10 +91,6 @@ def mainMenu():
 
 
 # The main program loop:
-
-#First, 
-createFile = open('./members.txt', 'a+')
-createFile.close()
 loadData(roster)
 print('\nWelcome to the Team Manager')
 selection = mainMenu()
