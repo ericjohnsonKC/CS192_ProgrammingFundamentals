@@ -23,9 +23,9 @@ def saveData(roster):
     return roster
 
 def loadData(roster):
-    createFile = open('./members.txt', 'a+')
-    createFile.close()
-    inFile = open('./members.txt', 'rt')
+    fileName = input("Filename to load: ")
+    inFile = open('./'+fileName, 'rt')
+    print("Loading data...")
     while True:
         inLine = inFile.readline()
         if not inLine:
@@ -34,14 +34,17 @@ def loadData(roster):
         name, phone, jerseyNumber = inLine.split(',')
         roster[name] = Player(name, phone, jerseyNumber)
     inFile.close()
-    print("Roster loaded from 'softball_team_roster.txt'.")
+    print("Data Loaded Successfully.")
     return roster
 
 def displayTeamRoster(roster):
-    for player in roster:
-        print('\n', roster[player].name)
-        print('\n', roster[player].phone)
-        print('\n', roster[player].jerseyNumber)
+    if len(roster) > 0:
+        for player in roster:
+            print('\n', 'Name: '+ roster[player].name)
+            print('\n', 'Phone: '+roster[player].phone)
+            print('\n', 'Jersey Number: '+roster[player].jerseyNumber)
+    else:
+        print("No current members in memory.")
     return roster
 
 def addMember(roster):
@@ -89,9 +92,8 @@ def mainMenu():
     selection = input('Selection> ')
     return selection
 
-
 # The main program loop:
-loadData(roster)
+
 print('\nWelcome to the Team Manager')
 selection = mainMenu()
 while selection != '9':
@@ -110,20 +112,3 @@ while selection != '9':
     selection = mainMenu()
 
 print('\nExiting Program...')
-
-# Create class of Player
-# class Player:
-#     def __init__(self, name, phone, jerseyNumber):
-#         self.name = name,
-#         self.phone = phone,
-#         self.jerseyNumber = jerseyNumber
-
-# roster = {}
-#
-# babe = Player(babe, 3)
-# lou = Player(lou, 4)
-#
-# roster = {'babe': babe, 'lou': lou}
-#
-# print(roster)
-
