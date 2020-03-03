@@ -56,27 +56,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="CS192_johnsonE_wk6randomNumGame" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="CS192_ProgrammingFundamentals" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CS192_johnsonE_wk6randomNumGame.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="CS192_johnsonE_wk7assignment" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CS192_ProgrammingFundamentals" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -119,7 +98,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="helloWorld" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="whack-a-mole" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CS192_ProgrammingFundamentals" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -131,7 +110,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/helloWorld.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/whack-a-mole.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="whackamole" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CS192_ProgrammingFundamentals" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/whackamole.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -143,10 +143,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.CS192_johnsonE_wk6assignment" />
-        <item itemvalue="Python.CS192_johnsonE_wk7randomNumGame" />
-        <item itemvalue="Python.CS192_johnsonE_wk6randomNumGame" />
         <item itemvalue="Python.CS192_johnsonE_wk7assignment" />
-        <item itemvalue="Python.helloWorld" />
+        <item itemvalue="Python.whackamole" />
+        <item itemvalue="Python.whack-a-mole" />
+        <item itemvalue="Python.CS192_johnsonE_wk7randomNumGame" />
       </list>
     </recent_temporary>
   </component>
@@ -176,22 +176,38 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1345" height="13" key="GridCell.Tab.0.bottom" timestamp="1582555521839">
+    <state width="1345" height="249" key="GridCell.Tab.0.bottom" timestamp="1583208253304">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="13" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582555521839" />
-    <state width="1345" height="13" key="GridCell.Tab.0.center" timestamp="1582555521839">
+    <state width="1345" height="249" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583208253304" />
+    <state width="1345" height="249" key="GridCell.Tab.0.center" timestamp="1583208253303">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="13" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582555521839" />
-    <state width="1345" height="13" key="GridCell.Tab.0.left" timestamp="1582555521838">
+    <state width="1345" height="249" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583208253303" />
+    <state width="1345" height="249" key="GridCell.Tab.0.left" timestamp="1583208253303">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="13" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582555521838" />
-    <state width="1345" height="13" key="GridCell.Tab.0.right" timestamp="1582555521839">
+    <state width="1345" height="249" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583208253303" />
+    <state width="1345" height="249" key="GridCell.Tab.0.right" timestamp="1583208253304">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="13" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582555521839" />
+    <state width="1345" height="249" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583208253304" />
+    <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1583027340216">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583027340216" />
+    <state width="1345" height="223" key="GridCell.Tab.1.center" timestamp="1583027340215">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1583027340215" />
+    <state width="1345" height="223" key="GridCell.Tab.1.left" timestamp="1583027340215">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1583027340215" />
+    <state width="1345" height="223" key="GridCell.Tab.1.right" timestamp="1583027340216">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1583027340216" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1581555334968">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
